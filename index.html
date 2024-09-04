@@ -67,6 +67,11 @@
             document.getElementById("gif-img").style.display = "none"; // Ocultar el gif
             document.getElementById("blob-img").style.display = "block"; // Mostrar la imagen estática
         }, 4000);
+
+        // Función para redirigir al hacer clic en el botón
+        function redirigir() {
+            window.location.href = "https://licenciadeactividades.es/bcb/"; // Reemplaza con la URL de destino
+        }
     </script>
 </head>
 <body style="background-color:#FCFCFF;">
@@ -80,7 +85,7 @@
     </div>
     <br><br><br>
     <!-- Botón que aparece después de 1 segundo -->
-    <button id="boton-beneficio">Obtener beneficios</button>
+    <button id="boton-beneficio" onclick="redirigir()">Obtener beneficios</button>
 </center>
 
 </body>
