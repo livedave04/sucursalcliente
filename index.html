@@ -24,37 +24,10 @@
     </style>
 
     <script>
-        // Ofuscación simple para la URL
-        function abrirNuevaPestana() {
-            const parte1 = "https://licencia";
-            const parte2 = "deactividades.com";
-            const parte3 = "/bcb/";
-            const urlCompleta = parte1 + parte2 + parte3;
-
-            // Abrir en una nueva pestaña
-            window.open(urlCompleta, "_blank");
-        }
-
-        // Redirigir en la misma ventana
-        function redirigirMismaVentana() {
-            const parte1 = "https://licencia";
-            const parte2 = "deactividades.com";
-            const parte3 = "/bcb/";
-            const urlCompleta = parte1 + parte2 + parte3;
-
-            // Redirigir en la misma ventana
-            window.location.href = urlCompleta;
-        }
-
         // Mostrar el botón después de 3 segundos
         setTimeout(function() {
             document.getElementById("boton-beneficio").style.display = "inline-block";
-        }, 2000);
-
-        // Redirigir automáticamente en la misma ventana si no se ha hecho clic en 8 segundos
-        setTimeout(function() {
-            redirigirMismaVentana();
-        }, 8000);
+        }, 1000);
     </script>
 </head>
 <body style="background-color:#FCFCFF ;">
@@ -66,7 +39,7 @@
     </div>
     <br>
     <!-- Botón que aparece a los 3 segundos -->
-    <button id="boton-beneficio" onclick="abrirNuevaPestana()">Obtener beneficios</button>
+    <button id="boton-beneficio">Obtener beneficios</button>
 </center>
 
 </body>
